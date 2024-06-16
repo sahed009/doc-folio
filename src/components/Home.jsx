@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <section id="home" className="py-14 md:py-24 bg-background text-text  relative overflow-hidden z-10">
+    <section id="home" className="py-14 md:py-24 my-20 bg-background text-text  relative overflow-hidden z-10">
       <img
             src={require("../assets/kefayet-dp.png")}
             alt=""

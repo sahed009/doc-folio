@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import PropTypes from "prop-types";
 
 const routes = [
@@ -9,16 +9,18 @@ const routes = [
   { name: "Testimonials", href: "#testimonials", isActive: false },
 ];
 
-const NavMenu = ({ routes }) => (
+const NavMenu = ({ routes, closeMenu }) => (
   <>
     {routes.map((route, i) => (
       <li
         key={i}
-        className="hover:font-bold min-w-[48px] rounded-md flex justify-center items-center px-1 py-2 duration-300 ease-in-out"
+        className="hover:font-bold min-w-[48px] rounded-md flex justify-center items-center duration-300 ease-in-out mt-[100px] lg:mt-0"
       >
-        <AnchorLink offset={() => 100} 
-          className= "text-primary bg-accent hover:bg-white min-w-[48px] rounded-md px-4 py-2"
+        <AnchorLink
+          offset={() => 100}
+          className="text-primary bg-transparent lg:bg-accent hover:bg-white rounded-md min-w-[48px] px-8 py-3 shadow-lg md:shadow-none my-4 "
           href={route.href}
+          onClick={closeMenu}
         >
           {route.name}
         </AnchorLink>
@@ -29,19 +31,25 @@ const NavMenu = ({ routes }) => (
 
 NavMenu.propTypes = {
   routes: PropTypes.array.isRequired,
+  closeMenu: PropTypes.func.isRequired,
 };
 
-
-const AuthNavMenu = () => (
-  <li>
-    <AnchorLink offset={() => 100} 
+const AuthNavMenu = ({ closeMenu }) => (
+  <li className=" mt-[100px] lg:mt-0">
+    <AnchorLink
+      offset={() => 100}
       href="#contact"
-      className="border border-primary text-white bg-primary hover:bg-secondary hover:text-white min-w-[48px] px-4 py-2 rounded duration-200 ease-in-out"
+      className="border border-primary text-white bg-primary hover:bg-secondary hover:text-white min-w-[70px] px-8 py-4 rounded-md shadow-xl duration-200 ease-in-out"
+      onClick={closeMenu}
     >
       Contact Me!
     </AnchorLink>
   </li>
 );
+
+AuthNavMenu.propTypes = {
+  closeMenu: PropTypes.func.isRequired,
+};
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,36 +58,54 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="py-8 bg-white text-text relative z-50">
-      <nav className="fixed top-0 left-0 w-full bg-white shadow-lg py-4  bg-opacity-[70%]">
-        <div className="container px-4">
-          <div className="flex justify-between items-center">
-            <a className="font-black text-5xl uppercase" href="#!">
-              {" "}
+      <nav className="fixed top-0 left-0 w-full bg-white shadow-lg py-4 bg-opacity-[70%]">
+        <div className="container px-8 md:px-4">
+          <div className="flex justify-between items-center w-full  h-40 lg:h-auto">
+            <a className="font-black text-7xl lg:text-5xl uppercase" href="#!">
               <span className="border-2 px-2 py-1 border-primary rounded-tl-[40px] rounded-br-[40px] rounded-tr-[20%] rounded-bl-[20%]">
                 DOC
-              </span>{" "}
-              <span className="text-primary  font-semibold">folio</span>
+              </span>
+              <span className="text-primary font-semibold">folio</span>
             </a>
             <button
-              className="block lg:hidden cursor-pointer h-10 z-20"
+              className={`block lg:hidden cursor-pointer z-20 absolute right-4 top-4  ${
+                isOpen ? "hidden" : ""
+              }`}
               type="button"
               id="hamburger"
               onClick={toggleMenu}
             >
-              <div className="h-0.5 w-7 bg-black -translate-y-2"></div>
-              <div className="h-0.5 w-7 bg-black"></div>
-              <div className="h-0.5 w-7 bg-black translate-y-2"></div>
+              <img
+                src={require("../assets/menu-icon.png")}
+                alt=""
+                className="max-w-full h-40"
+              />
             </button>
             <ul
-              className={`flex flex-col lg:flex-row justify-center items-center text-3xl gap-6 lg:text-base lg:gap-2 absolute h-screen w-screen top-0 left-full lg:left-0 lg:relative lg:h-auto lg:w-auto bg-white lg:bg-transparent ${
-                isOpen ? "left-0" : "-left-full"
-              }`}
+              className={`flex flex-col lg:flex-row justify-center items-center text-7xl gap-y-4 lg:text-base lg:gap-2 fixed inset-0 lg:static h-screen lg:h-auto bg-white lg:bg-transparent transition-transform transform ${
+                isOpen ? "translate-x-0" : "translate-x-full"
+              } lg:translate-x-0`}
               id="navbar"
             >
-              <NavMenu routes={routes} />
-              <AuthNavMenu />
+              <button
+                className="absolute top-20 right-20 lg:hidden cursor-pointer h-10 z-20"
+                type="button"
+                onClick={closeMenu}
+              >
+                <img
+                src={require("../assets/close-icon.png")}
+                alt=""
+                className="max-w-full h-40"
+              />
+              </button>
+              <NavMenu routes={routes} closeMenu={closeMenu} />
+              <AuthNavMenu closeMenu={closeMenu} />
             </ul>
           </div>
         </div>
