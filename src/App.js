@@ -1,9 +1,9 @@
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 import About from "./components/about";
-import Contact from "./components/contact";
 import Services from "./components/services";
 import Testimonials from "./components/testimonials";
+import Contact from "./components/contact";
 import Footer from "./components/footer";
 function App() {
   return (
