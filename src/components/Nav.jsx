@@ -18,7 +18,7 @@ const NavMenu = ({ routes, closeMenu }) => (
       >
         <AnchorLink
           offset={() => 100}
-          className="text-primary bg-transparent lg:bg-accent hover:bg-white rounded-md min-w-[48px] px-8 py-3 shadow-lg md:shadow-none my-4 "
+          className="text-primary bg-transparent lg:bg-accent hover:bg-white rounded-md min-w-[48px] px-8 3xl:px-10 py-3 3xl:py-4 3xl:text-xl shadow-lg md:shadow-none my-4 "
           href={route.href}
           onClick={closeMenu}
         >
@@ -39,7 +39,7 @@ const AuthNavMenu = ({ closeMenu }) => (
     <AnchorLink
       offset={() => 100}
       href="#contact"
-      className="border border-primary text-white bg-primary hover:bg-secondary hover:text-white min-w-[70px] px-8 py-4 rounded-md shadow-xl duration-200 ease-in-out"
+      className="border border-primary text-white bg-primary hover:bg-secondary hover:text-white min-w-[70px] px-8 3xl:px-10 py-4 3xl:py-6 3xl:text-xl rounded-md shadow-xl duration-200 ease-in-out"
       onClick={closeMenu}
     >
       Contact Me!
@@ -65,30 +65,16 @@ const Nav = () => {
   return (
     <div className="py-8 bg-white text-text relative z-50">
       <nav className="fixed top-0 left-0 w-full bg-white shadow-lg py-4 bg-opacity-[70%]">
-        <div className="container px-8 md:px-4">
+        <div className="px-8 md:px-4">
           <div className="flex justify-between items-center w-full  h-40 lg:h-auto">
-            <a className="font-black text-7xl lg:text-5xl uppercase" href="#!">
+            <a className="font-black text-7xl lg:text-5xl 3xl:text-7xl uppercase" href="#!">
               <span className="border-2 px-2 py-1 border-primary rounded-tl-[40px] rounded-br-[40px] rounded-tr-[20%] rounded-bl-[20%]">
                 DOC
               </span>
               <span className="text-primary font-semibold">folio</span>
             </a>
-            <button
-              className={`block lg:hidden cursor-pointer z-20 absolute right-4 top-4  ${
-                isOpen ? "hidden" : ""
-              }`}
-              type="button"
-              id="hamburger"
-              onClick={toggleMenu}
-            >
-              <img
-                src={require("../assets/menu-icon.png")}
-                alt=""
-                className="max-w-full h-40"
-              />
-            </button>
             <ul
-              className={`flex flex-col lg:flex-row justify-center items-center text-7xl gap-y-4 lg:text-base lg:gap-2 fixed inset-0 lg:static h-screen lg:h-auto bg-white lg:bg-transparent transition-transform transform ${
+              className={`flex flex-col lg:flex-row justify-center items-center text-7xl  gap-y-4 lg:text-base lg:gap-2 fixed inset-0 lg:static h-screen lg:h-auto bg-white lg:bg-transparent transition-transform transform ${
                 isOpen ? "translate-x-0" : "translate-x-full"
               } lg:translate-x-0`}
               id="navbar"
@@ -107,6 +93,20 @@ const Nav = () => {
               <NavMenu routes={routes} closeMenu={closeMenu} />
               <AuthNavMenu closeMenu={closeMenu} />
             </ul>
+            <button
+              className={`block lg:hidden cursor-pointer z-20 absolute right-4 lg:right-0 top-4  ${
+                isOpen ? "hidden" : ""
+              }`}
+              type="button"
+              id="hamburger"
+              onClick={toggleMenu}
+            >
+              <img
+                src={require("../assets/menu-icon.png")}
+                alt=""
+                className="max-w-full h-40"
+              />
+            </button>
           </div>
         </div>
       </nav>

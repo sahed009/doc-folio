@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="py-14   bg-background text-text  relative overflow-hidden z-10"
+      className="py-14  3xl:py-28 bg-background text-text  relative overflow-hidden z-10"
     >
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-12">
@@ -19,10 +19,10 @@ const Home = () => {
               <div className="absolute left-0 h-full w-1 rounded-md bg-primary" />
 
               <div className="ml-6">
-                <h1 className="text-7xl lg:text-4xl xl:text-7xl leading-[100px] font-extrabold text-primary">
+                <h1 className="text-7xl lg:text-4xl 3xl:text-7xl leading-[100px] font-extrabold text-primary">
                   Doctor
                 </h1>
-                <h2 className="text-7xl lg:text-4xl xl:text-7xl leading-[100px] font-bold">
+                <h2 className="text-7xl lg:text-4xl 3xl:text-7xl leading-[100px] font-bold">
                   Kefayetur Rahman
                 </h2>
                 <h4 className="text-5xl lg:text-2xl leading-none mt-6 uppercase">

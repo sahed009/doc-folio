@@ -113,7 +113,7 @@ const Popup = () => {
   };
 
   return (
-    <div id="contact" className="relative text-center h-[250px] w-full mt-20">
+    <div id="contact" className="relative text-center h-[250px] w-full my-10 xl:my-40">
       <div className="mb-6">
         <p className="font-semibold text-5xl">
           Want to connect? &#128526; <br />

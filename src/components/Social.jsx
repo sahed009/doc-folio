@@ -20,7 +20,7 @@ const SocialLinks = ({ links }) => (
       <li className="mr-12 lg:mr-6" key={i}>
         <a
           href={link.href}
-          className="text-6xl lg:text-4xl opacity-70 hover:opacity-100 transition duration-300"
+          className="text-6xl lg:text-4xl 3xl:text-6xl opacity-70 hover:opacity-100 transition duration-300"
           target="_blank"
           rel="noreferrer"
         >
