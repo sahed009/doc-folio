@@ -14,7 +14,7 @@ const About = () => {
           <div className="lg:px-4 my-6 lg:my-0">
             <div
               className="min-h-[300px] md:h-full bg-center bg-cover rounded-md"
-              data-aos="fade-left"
+              data-aos="flip-left"
               style={{
                 backgroundImage: `url(${hospitalImage})`,
               }}
