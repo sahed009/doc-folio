@@ -89,7 +89,6 @@ const ContactForm = () => {
 
 const ContactFormCard = () => (
   <div
-    data-aos="fade-down"
     className="bg-primary shadow-xl rounded-2xl py-4 px-2 md:py-20 lg:py-4 md:px-40 border border-white w-[350px] md:w-[900px]"
   >
     <h2 className="text-4xl lg:text-5xl  leading-none font-bold mb-4">
@@ -113,7 +112,7 @@ const Popup = () => {
   };
 
   return (
-    <div id="contact" className="relative text-center h-32 lg:h-[250px] w-full my-10 xl:my-40" data-aos="fade-up">
+    <div id="contact" className="relative text-center h-32 lg:h-[250px] w-full my-10 xl:my-40">
       <div className="mb-6">
         <p className="font-semibold text-xl lg:text-5xl">
           Want to connect? &#128526; <br />

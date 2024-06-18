@@ -50,16 +50,13 @@ ServiceItem.propTypes = {
 const Services = () => {
 	return (
 		<section id="services" className="py-14 md:py-24 bg-white  text-zinc-900  relative z-[1] overflow-hidden">
+			<div className="absolute top-0 w-full h-2 bg-primary"></div>
 			<div className="container px-4 mx-auto">
 				<div className="absolute top-16 right-0 bottom-16 left-1/2 lg:left-[60%] rounded-l-[30px] bg-primary bg-opacity-40 w-[100vw] -z-[1]" />
 				<div className="w-full max-w-xl mb-12">
 					<h2 className="text-3xl leading-none md:text-[45px] font-bold mb-4">
-						Services We Have
+						Services I Provide
 					</h2>
-					<p className="text-lg opacity-80 mb-6">
-						Good void fruitful us unto brought firmament, in upon, spirit rule
-						face. Forth created good let you'll years heaven above.
-					</p>
 				</div>
 
 				<div className="grid grid-cols-3 gap-6 gap-y-24 md:gap-y-0 mt-20 max-w-7xl mx-auto">
