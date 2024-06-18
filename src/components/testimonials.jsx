@@ -83,7 +83,7 @@ const Testimonials = () => {
 
         <div className="flex flex-col gap-y-6 mt-12 text-zinc-900">
           {testimonialList.map((testimonial, i) => (
-            <div className="bg-accent rounded-2xl mt-16 mb-6" key={i} data-aos="zoom-in-up">
+            <div className="bg-accent rounded-2xl mt-16 mb-6" key={i} data-aos="fade-down">
               <TestimonialItem testimonial={testimonial} index={i} />
             </div>
           ))}
