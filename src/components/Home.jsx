@@ -11,9 +11,7 @@ const Home = () => {
         <div className="grid grid-cols-12 gap-0">
           <div
             className="col-span-12 lg:col-span-6 order-2 lg:order-1"
-            data-aos="fade-left"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
+            data-aos="fade-up"
           >
             <div className="w-full h-2/3 mt-12 lg:mt-10 relative flex justify-center items-center">
               <div className="absolute left-0 h-full w-1 rounded-md bg-primary" />
@@ -40,9 +38,6 @@ const Home = () => {
           </div>
           <div
             className="col-span-12 lg:col-span-6 lg:my-0 order-1 lg:order-2"
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
           >
             <div className="mt-16 flex justify-center items-center">
               <img

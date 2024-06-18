@@ -89,7 +89,7 @@ const ContactForm = () => {
 
 const ContactFormCard = () => (
   <div
-    data-aos="fade-right"
+    data-aos="fade-up"
     className="bg-primary shadow-xl rounded-2xl py-4 px-2 md:py-20 lg:py-4 md:px-40 border border-white w-[350px] md:w-[900px]"
   >
     <h2 className="text-4xl lg:text-5xl  leading-none font-bold mb-4">

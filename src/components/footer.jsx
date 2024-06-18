@@ -1,7 +1,7 @@
 import React from "react";
 const Footer = () => {
   return (
-    <footer className="py-12 lg:py-8 bg-primary text-white text-2xl lg:text-lg border-t-2">
+    <footer className="py-12 lg:py-8 bg-primary text-white text-2xl lg:text-lg border-t-2" data-aos="fade-down">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-12 gap-4 ">
           <div className="col-span-12 lg:col-span-4 flex items-center justify-center my-4">

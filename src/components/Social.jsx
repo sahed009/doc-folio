@@ -15,7 +15,7 @@ const socialLinks = [
 ];
 
 const SocialLinks = ({ links }) => (
-  <ul className="inline-flex mt-10 items-start">
+  <ul className="inline-flex mt-10 items-start" data-aos="fade-up">
     {links.map((link, i) => (
       <li className="mr-8 md:mr-12 lg:mr-6" key={i}>
         <a
