@@ -10,9 +10,9 @@ const ParallaxSec = () => {
         strength={150}
         className="bg-center bg-no-repeat bg-cover"
       >
-        <div className="h-full p-32">
-          <div className="bg-primary p-16 rounded-md">
-            <p className="text-7xl lg:text-5xl 3xl:text-7xl text-center text-white font-bold">
+        <div className="h-full m-8 lg:py-10" data-aos="flip-left">
+          <div className="bg-primary p-4 rounded-md">
+            <p className="text-2xl lg:text-5xl 3xl:text-7xl text-center text-white font-bold">
               Medicines can cure diseases, but only doctors can cure patients.
             </p>
           </div>

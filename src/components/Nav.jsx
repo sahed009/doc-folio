@@ -63,11 +63,11 @@ const Nav = () => {
   };
 
   return (
-    <div className="py-8 bg-white text-text relative z-50">
+    <div className="pb-4 bg-white text-text relative z-50">
       <nav className="fixed top-0 left-0 w-full bg-white shadow-lg py-4 bg-opacity-[70%]">
-        <div className="px-8 md:px-4">
-          <div className="flex justify-between items-center w-full  h-40 lg:h-auto">
-            <a className="font-black text-7xl lg:text-5xl 3xl:text-7xl uppercase" href="#!">
+        <div className="px-0 md:px-4">
+          <div className="flex justify-between items-center w-full  h-16 lg:h-auto">
+            <a className="font-black text-2xl p-2 lg:text-5xl 3xl:text-7xl uppercase" href="#!">
               <span className="border-2 px-2 py-1 border-primary rounded-tl-[40px] rounded-br-[40px] rounded-tr-[20%] rounded-bl-[20%]">
                 DOC
               </span>
@@ -80,14 +80,14 @@ const Nav = () => {
               id="navbar"
             >
               <button
-                className="absolute top-20 right-20 lg:hidden cursor-pointer h-10 z-20"
+                className="absolute top-10 right-10 lg:hidden cursor-pointer h-10 z-20"
                 type="button"
                 onClick={closeMenu}
               >
                 <img
                 src={require("../assets/close-icon.png")}
                 alt=""
-                className="max-w-full h-40"
+                className="max-w-full h-20"
               />
               </button>
               <NavMenu routes={routes} closeMenu={closeMenu} />
@@ -104,7 +104,7 @@ const Nav = () => {
               <img
                 src={require("../assets/menu-icon.png")}
                 alt=""
-                className="max-w-full h-40"
+                className="max-w-full h-16"
               />
             </button>
           </div>

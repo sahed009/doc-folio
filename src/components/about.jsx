@@ -7,20 +7,21 @@ const About = () => {
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-8">
           <div>
-            <h2 className="md:text-end text-7xl lg:text-6xl leading-snug md:leading-tight font-light mb-0 ">
+            <h2 className="md:text-end text-5xl lg:text-6xl leading-snug md:leading-tight font-light mb-0 " data-aos="fade-up">
               About my journey since 2019
             </h2>
           </div>
           <div className="lg:px-4 my-6 lg:my-0">
             <div
               className="min-h-[300px] md:h-full bg-center bg-cover rounded-md"
+              data-aos="fade-left"
               style={{
                 backgroundImage: `url(${hospitalImage})`,
               }}
             ></div>
           </div>
-          <div className="pr-7">
-            <p className="text-2xl lg:text-base 3xl:text-3xl leading-7 opacity-70 mt-6 mb-0">
+          <div className="pr-7" data-aos="fade-down">
+            <p className="text-lg lg:text-base 3xl:text-3xl leading-7 opacity-70 mt-6 mb-0">
               Throughout my time in medical school, I've had the opportunity to
               engage in various clinical rotations, where I've encountered a
               diverse range of patients and medical conditions. These
