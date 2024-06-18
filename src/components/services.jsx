@@ -31,7 +31,7 @@ const serviceList = [
 ];
 
 const ServiceItem = ({ service }) => (
-	<div className="bg-white  shadow-xl rounded-2xl p-6 pb-12 h-full" data-aos="flip-down">
+	<div className="bg-white  shadow-xl rounded-2xl p-6 pb-12 h-full" data-aos="fade-down">
 		<div className="w-20 h-20 rounded-full text-3xl flex items-center justify-center -mt-16 bg-white  shadow-2xl text-primary">
 			<FontAwesomeIcon icon={service.icon} />
 		</div>
