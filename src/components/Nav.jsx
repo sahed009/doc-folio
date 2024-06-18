@@ -14,11 +14,11 @@ const NavMenu = ({ routes, closeMenu }) => (
     {routes.map((route, i) => (
       <li
         key={i}
-        className="hover:font-bold min-w-[48px] rounded-md flex justify-center items-center duration-300 ease-in-out mt-[100px] lg:mt-0"
+        className="hover:font-bold min-w-[48px] rounded-md flex justify-center items-center duration-300 ease-in-out lg:mt-0"
       >
         <AnchorLink
           offset={() => 100}
-          className="text-primary bg-transparent lg:bg-accent hover:bg-white rounded-md min-w-[48px] px-8 3xl:px-10 py-3 3xl:py-4 3xl:text-xl shadow-lg md:shadow-none my-4 "
+          className="text-primary bg-transparent lg:bg-accent hover:bg-white rounded-md min-w-[48px] px-8 3xl:px-10 py-3 3xl:py-4 3xl:text-xl shadow-lg md:shadow-none mt-2"
           href={route.href}
           onClick={closeMenu}
         >
@@ -35,11 +35,11 @@ NavMenu.propTypes = {
 };
 
 const AuthNavMenu = ({ closeMenu }) => (
-  <li className=" mt-[100px] lg:mt-0">
+  <li>
     <AnchorLink
       offset={() => 100}
       href="#contact"
-      className="border border-primary text-white bg-primary hover:bg-secondary hover:text-white min-w-[70px] px-8 3xl:px-10 py-4 3xl:py-6 3xl:text-xl rounded-md shadow-xl duration-200 ease-in-out"
+      className="border border-primary text-white bg-primary hover:bg-secondary hover:text-white min-w-[70px] px-8 3xl:px-10 py-2 lg:py-3 3xl:py-6 3xl:text-xl rounded-md shadow-xl duration-200 ease-in-out"
       onClick={closeMenu}
     >
       Contact Me!
@@ -74,7 +74,7 @@ const Nav = () => {
               <span className="text-primary font-semibold">folio</span>
             </a>
             <ul
-              className={`flex flex-col lg:flex-row justify-center items-center text-7xl  gap-y-4 lg:text-base lg:gap-2 fixed inset-0 lg:static h-screen lg:h-auto bg-white lg:bg-transparent transition-transform transform ${
+              className={`flex flex-col lg:flex-row justify-center items-center text-3xl  gap-y-4 lg:text-base lg:gap-2 fixed inset-0 lg:static h-screen lg:h-auto bg-white lg:bg-transparent transition-transform transform ${
                 isOpen ? "translate-x-0" : "translate-x-full"
               } lg:translate-x-0`}
               id="navbar"

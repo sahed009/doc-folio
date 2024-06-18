@@ -1,0 +1,10 @@
+# robots.txt for Doc-Folio
+
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+
+# Allow all other pages
+Allow: /
+
+Sitemap: https://kefayets.sahedcodes.com/sitemap.xml

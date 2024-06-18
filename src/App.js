@@ -9,6 +9,7 @@ import Footer from "./components/footer";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ParallaxSec from "./components/ParallaxSec";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
       <Nav />
       <Home />
       <About />
+      <ParallaxSec />
       <Services />
       <Testimonials />
       <Contact />
