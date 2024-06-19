@@ -5,7 +5,7 @@ const ParallaxSec = () => {
   return (
     <div>
       <Parallax
-        bgImage={require("../assets/parallex.jpg")}
+        bgImage={require("../assets/parallex.webp")}
         bgImageAlt="Doctor"
         strength={150}
         className="bg-center bg-no-repeat bg-cover"

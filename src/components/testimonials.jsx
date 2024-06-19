@@ -5,7 +5,7 @@ const testimonialList = [
   {
     author: {
       fullName: "Sakib Sadman",
-      picture: require("../assets/test1.jpg"),
+      picture: require("../assets/test1.webp"),
       designation: "Manger / HR",
     },
     description:
@@ -14,7 +14,7 @@ const testimonialList = [
   {
     author: {
       fullName: "Murphy",
-      picture: require("../assets/test3.jpg"),
+      picture: require("../assets/test3.webp"),
       designation: "Designer / Employee",
     },
     description:
@@ -23,7 +23,7 @@ const testimonialList = [
   {
     author: {
       fullName: "Badar uddin",
-      picture: require("../assets/test2.jpg"),
+      picture: require("../assets/test2.webp"),
       designation: "Founder / CEO",
     },
     description:

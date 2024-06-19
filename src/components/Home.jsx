@@ -41,7 +41,7 @@ const Home = () => {
           >
             <div className="mt-16 flex justify-center items-center">
               <img
-                src={require("../assets/kefayet-dp.png")}
+                src={require("../assets/kefayet-dp.webp")}
                 alt=""
                 className="max-w-full h-full"
               />

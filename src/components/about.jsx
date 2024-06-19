@@ -1,5 +1,5 @@
 import React from "react";
-import hospitalImage from "../assets/hospital.jpg";
+import hospitalImage from "../assets/hospital.webp";
 
 const About = () => {
   return (
