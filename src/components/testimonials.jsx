@@ -7,6 +7,8 @@ const testimonialList = [
       fullName: "Sakib Sadman",
       picture: require("../assets/test1.webp"),
       designation: "Manger / HR",
+      width: "1355",
+      height: "1355",
     },
     description:
       "Dr. Kefayetur Rahman is an exceptional physician. From my first appointment, I was impressed by his thoroughness and genuine concern for my well-being. He takes the time to listen to my concerns and explains complex medical issues in a way that is easy to understand. His expertise in neurology is evident, and his compassionate approach makes all the difference. I feel confident and reassured knowing that I'm in such capable hands. I highly recommend Dr. [Friend's Name] to anyone seeking a knowledgeable and caring doctor.",
@@ -16,6 +18,8 @@ const testimonialList = [
       fullName: "Murphy",
       picture: require("../assets/test3.webp"),
       designation: "Designer / Employee",
+      width: "1356",
+      height: "1355",
     },
     description:
       "I have been seeing Dr. Kefayetur Rahman for over a year now, and he has consistently provided outstanding care. His expertise in neurology has been instrumental in managing my condition, and his personalized approach makes me feel valued as a patient. He is always patient and thorough during consultations, ensuring that all my questions are answered. Dr. [Friend's Name] is not just a doctor; he is a compassionate healer who truly cares about his patients' well-being. I am incredibly grateful to have him as my physician and highly recommend his services to others.",
@@ -25,6 +29,8 @@ const testimonialList = [
       fullName: "Badar uddin",
       picture: require("../assets/test2.webp"),
       designation: "Founder / CEO",
+      width: "1225",
+      height: "1225",
     },
     description:
       "I can confidently say that he is one of the most dedicated and skilled doctors I know. His passion for neurology and his commitment to his patients are truly inspiring. He approaches each case with a meticulous attention to detail and a deep sense of empathy. His ability to connect with patients and provide exceptional care sets him apart in the medical field.",
@@ -42,6 +48,8 @@ const TestimonialItem = ({ testimonial, index }) => (
         src={testimonial.author.picture}
         alt={testimonial.author.fullName}
         className="w-full h-auto rounded-2xl -mt-12 -mb-6"
+        width={testimonial.author.width}
+        height={testimonial.author.height}
       />
     </div>
     <div
@@ -83,7 +91,11 @@ const Testimonials = () => {
 
         <div className="flex flex-col gap-y-6 mt-12 text-zinc-900">
           {testimonialList.map((testimonial, i) => (
-            <div className="bg-accent rounded-2xl mt-16 mb-6" key={i} data-aos="fade-down">
+            <div
+              className="bg-accent rounded-2xl mt-16 mb-6"
+              key={i}
+              data-aos="fade-down"
+            >
               <TestimonialItem testimonial={testimonial} index={i} />
             </div>
           ))}

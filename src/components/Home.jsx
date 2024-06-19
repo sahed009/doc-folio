@@ -44,6 +44,8 @@ const Home = () => {
                 src={require("../assets/kefayet-dp.webp")}
                 alt=""
                 className="max-w-full h-full"
+                width={600}
+                height={600}
               />
             </div>
           </div>

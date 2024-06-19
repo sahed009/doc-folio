@@ -7,7 +7,10 @@ const About = () => {
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-8">
           <div>
-            <h2 className="md:text-end text-5xl lg:text-6xl leading-snug md:leading-tight font-light mb-0 " data-aos="fade-up">
+            <h2
+              className="md:text-end text-5xl lg:text-6xl leading-snug md:leading-tight font-light mb-0 "
+              data-aos="fade-up"
+            >
               About my journey since 2019
             </h2>
           </div>
@@ -31,10 +34,10 @@ const About = () => {
               rigorous academic demands with personal growth has not always been
               easy, but each obstacle has taught me valuable lessons in
               perseverance and adaptability. Outside of my studies, I enjoy
-              chess, which help me maintain a well-rounded
-              perspective and a healthy work-life balance. I look forward to the
-              future, eager to contribute to the medical community and provide
-              quality care to those in need.
+              chess, which help me maintain a well-rounded perspective and a
+              healthy work-life balance. I look forward to the future, eager to
+              contribute to the medical community and provide quality care to
+              those in need.
             </p>
           </div>
         </div>
